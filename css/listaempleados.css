@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.MainContainer {
+	height: 100vh;
+	display: grid;
+	grid-gap: 0px;
+	grid-template-columns: repeat(12,1fr);
+	grid-template-rows: 48px auto 48px;
+	grid-template-areas: 
+
+	"h h h h h h h h h h h h"
+	"n n c c c c c c c c c c"
+	"n n c c c c c c c c c c";
+}
+
+.Header {
+
+	grid-area: h;
+	background-color: #222629;
+	position: fixed;
+	width: 100%;
+	height: 48px;
+	z-index: 1000;
+}
+
+.Credenciales {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 12px;
+	margin-right: 20px;
+
+}
+
+.usuario {
+	color: white;
+	margin-right: 20px;
+	 font-family: Verdana, Geneva, sans-serif;
+	 font-size: 12px;
+
+}
+
+.puesto {
+	color: white;
+	margin-right:  20px;
+	 font-family: Verdana, Geneva, sans-serif;
+	 font-size: 12px;
+
+}
+
+.NavBar {
+
+	grid-area: n;
+	background-color: #222629;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-bottom: 60px;
+	position: fixed;
+	width: 228px;
+	top: 48px;
+	height: 100%;
+
+
+	
+
+}
+
+.NavBar-Elements {
+	 list-style: none;
+	 display: block;
+  
+	height: 50px;
+	width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #222629;
+  font-size: 12px;
+  
+
+ 
+
+}
+
+.NavBar-Elements a {
+  display: block;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #222629;
+  
+  border-radius: 3px;
+  transition: 0.3s;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.4s;
+
+
+}
+
+.NavBar-Elements a:hover {
+	background-color: black;
+	border-left: 3px solid #17e9e0;
+}
+
+.NavBar-Elements ul {
+	display: none;
+}
+
+.material-icons {
+	float: left;
+	margin-right: 10px;
+
+	
+}
+
+.NavBar-Elements .activado > a {
+	background-color: black;
+	border-left: 3px solid #17e9e0;
+}
+
+.izq {
+	float: left;
+	line-height: 16px;
+	margin-right: 10px;
+}
+
+.derecha {
+	float: right;
+	line-height: 16px;
+}
+
+.Content {
+	grid-area: c;
+	background: white;
+	display: flex;
+	justify-content: center;
+
+
+}
+
+.thead-dark {
+	background-color: #222629;
+	color: white;
+}
+
+.bootstrap {
+	margin-top: 50px;
+width: 90%;
+
+	
+}
+
+.contenedorform {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 50px;
+	height: 125px;
+}
+
+
+.bootstrap select.form-control:not([size]):not([multiple]) {
+	height: 2.5em;
+}
+
+.Footer {
+	grid-area: f;
+	background-color: #5D5C61;
+}
+
+.titulo {
+	margin-bottom: 20px;
+}
+

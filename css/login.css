@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(90deg, rgba(41,100,138,1) 0%, rgba(59,148,94,1) 50%, rgba(41,100,138,1) 100%);
+    color: #fff;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.row{
+    margin: 20px 0px;
+}
+
+.btn{
+    border: none;
+}
+.btn-primary:hover, .btn-primary:focus,.btn-block:hover, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #00b3db;
+    border-color: #285e8e; /*set the color you want here*/
+}
+.margen{
+    margin-top:27vh;
+}
